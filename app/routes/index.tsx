@@ -26,7 +26,7 @@ export const action: ActionFunction = async ({request}) =>{
   });
 
   console.log('*******'+redirectUrl+'*******')
-
+  console.log(track.trackId)
   return redirect(`/tracks/${track.trackId}`)
 };
 

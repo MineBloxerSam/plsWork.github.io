@@ -8,16 +8,17 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@mantine/core": "^6.0.6",
-    "@mantine/hooks": "^6.0.6",
-    "@mantine/ssr": "^6.0.6",
-    "@prisma/client": "^4.12.0",
+    "@mantine/core": "^6.0.8",
+    "@mantine/hooks": "^6.0.8",
+    "@mantine/ssr": "^6.0.8",
+    "@prisma/client": "^4.13.0",
     "@remix-run/node": "^1.15.0",
     "@remix-run/react": "^1.15.0",
     "@remix-run/serve": "^1.15.0",
+    "esbuild": "^0.17.17",
     "isbot": "^3.6.5",
-    "nanoid": "^3.0.0",
-    "prisma": "^4.12.0",
+    "nanoid": "^4.0.2",
+    "prisma": "^4.13.0",
     "randomstring": "^1.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

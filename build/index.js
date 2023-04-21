@@ -34,7 +34,7 @@ var entry_server_exports = {};
 __export(entry_server_exports, {
   default: () => handleRequest
 });
-var import_node_stream = require("stream"), import_node = require("@remix-run/node"), import_react = require("@remix-run/react"), import_isbot = __toESM(require("isbot")), import_server = require("react-dom/server"), import_jsx_runtime = require("react/jsx-runtime"), ABORT_DELAY = 5e3;
+var import_node_stream = require("stream"), import_node = require("@remix-run/node"), import_react = require("@remix-run/react"), import_isbot = __toESM(require("isbot")), import_server = require("react-dom/server"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), ABORT_DELAY = 5e3;
 function handleRequest(request, responseStatusCode, responseHeaders, remixContext) {
   return (0, import_isbot.default)(request.headers.get("user-agent")) ? handleBotRequest(
     request,
@@ -51,13 +51,21 @@ function handleRequest(request, responseStatusCode, responseHeaders, remixContex
 function handleBotRequest(request, responseStatusCode, responseHeaders, remixContext) {
   return new Promise((resolve, reject) => {
     let { pipe, abort } = (0, import_server.renderToPipeableStream)(
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
         import_react.RemixServer,
         {
           context: remixContext,
           url: request.url,
           abortDelay: ABORT_DELAY
-        }
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/entry.server.tsx",
+          lineNumber: 45,
+          columnNumber: 7
+        },
+        this
       ),
       {
         onAllReady() {
@@ -83,13 +91,21 @@ function handleBotRequest(request, responseStatusCode, responseHeaders, remixCon
 function handleBrowserRequest(request, responseStatusCode, responseHeaders, remixContext) {
   return new Promise((resolve, reject) => {
     let { pipe, abort } = (0, import_server.renderToPipeableStream)(
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
         import_react.RemixServer,
         {
           context: remixContext,
           url: request.url,
           abortDelay: ABORT_DELAY
-        }
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/entry.server.tsx",
+          lineNumber: 87,
+          columnNumber: 7
+        },
+        this
       ),
       {
         onShellReady() {
@@ -118,98 +134,85 @@ var root_exports = {};
 __export(root_exports, {
   default: () => App
 });
-var import_react2 = require("@remix-run/react"), import_jsx_runtime2 = require("react/jsx-runtime");
+var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime2 = require("react/jsx-dev-runtime");
 function App() {
-  return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("html", { lang: "en", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("head", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("meta", { charSet: "utf-8" }),
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("meta", { name: "viewport", content: "width=device-width,initial-scale=1" }),
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react2.Meta, {}),
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react2.Links, {})
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("body", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react2.Outlet, {}),
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react2.ScrollRestoration, {}),
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react2.Scripts, {}),
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react2.LiveReload, {})
-    ] })
-  ] });
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("html", { lang: "en", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("head", { children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("meta", { charSet: "utf-8" }, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 14,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("meta", { name: "viewport", content: "width=device-width,initial-scale=1" }, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 15,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Meta, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 16,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Links, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 17,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/root.tsx",
+      lineNumber: 13,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("body", { children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Outlet, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 20,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.ScrollRestoration, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 21,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Scripts, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 22,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.LiveReload, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 23,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/root.tsx",
+      lineNumber: 19,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/root.tsx",
+    lineNumber: 12,
+    columnNumber: 5
+  }, this);
 }
 
-// app/routes/tracks/$trackId.tsx
+// app/routes/$trackId.tsx
 var trackId_exports = {};
 __export(trackId_exports, {
-  default: () => TrackRoute,
-  loader: () => loader
+  action: () => action,
+  default: () => TrackRoute
 });
-var import_core = require("@mantine/core"), import_hooks = require("@mantine/hooks"), import_node2 = require("@remix-run/node"), import_react3 = require("@remix-run/react");
+var import_core = require("@mantine/core"), import_node2 = require("@remix-run/node"), import_react3 = require("@remix-run/react"), import_react4 = require("react");
 
 // app/utils/db.server.ts
 var import_client = require("@prisma/client");
 function getDb() {
-  return new import_client.PrismaClient();
+  return global.__db || (global.__db = new import_client.PrismaClient()), global.__db;
 }
 var db = getDb();
 
-// app/routes/tracks/$trackId.tsx
-var import_jsx_runtime3 = require("react/jsx-runtime");
-console.log("made it to $trackId.tsx");
-var loader = async ({ params }) => {
-  let track = await db.track.findUnique({
-    where: { trackId: params.trackId },
-    select: {
-      trackId: !0,
-      Clicks: {
-        orderBy: [{
-          createdAt: "desc"
-        }]
-      }
-    }
-  });
-  if (!track)
-    throw new Error("track $(params.trackId) does not exist");
-  return (0, import_node2.json)({ track });
-};
-function TrackRoute() {
-  let data = (0, import_react3.useLoaderData)(), clipboard = (0, import_hooks.useClipboard)({ timeout: 500 });
-  console.log("http://localhost:3000/" + data.track.trackId);
-  let rows = data.track.Clicks.map((click) => /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("tr", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("td", { children: new Date(click.createdAt).toLocaleDateString(
-      [],
-      { hour12: !0 }
-    ) }),
-    /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("td", { children: click.createdAt }),
-    /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("td", { children: click.ip })
-  ] }, click.id));
-  return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
-      import_core.Button,
-      {
-        color: clipboard.copied ? "teal" : "blue",
-        onClick: () => clipboard.copy(window.location.origin + "/" + data.track.trackId),
-        children: clipboard.copied ? "copied" : "Copy"
-      }
-    ),
-    /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(import_core.Table, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("tr", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("td", { children: "Data" }),
-        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("td", { children: "User Agent" }),
-        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("td", { children: "Ip" })
-      ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("tbody", { children: rows })
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", { href: "/" + data.track.trackId, target: "new", children: "TEST" })
-  ] });
-}
-
 // app/routes/$trackId.tsx
-var trackId_exports2 = {};
-__export(trackId_exports2, {
-  action: () => action,
-  default: () => TrackRoute2
-});
-var import_core2 = require("@mantine/core"), import_node3 = require("@remix-run/node"), import_react4 = require("@remix-run/react"), import_react5 = require("react");
-var import_jsx_runtime4 = require("react/jsx-runtime"), action = async ({ request, params }) => {
+var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime"), action = async ({ request, params }) => {
   let track = await db.track.findUnique({
     where: { trackId: params.trackId },
     select: {
@@ -226,25 +229,41 @@ var import_jsx_runtime4 = require("react/jsx-runtime"), action = async ({ reques
   if (typeof userAgent != "string")
     throw new Error("Missing user data");
   let fields = { userAgent, ip, trackId: track.id };
-  return await db.click.create({ data: fields }), (0, import_node3.redirect)(track.redirectUrl);
+  return await db.click.create({ data: fields }), (0, import_node2.redirect)(track.redirectUrl);
 };
-function TrackRoute2() {
-  let [ip, setIp] = (0, import_react5.useState)(), formRef = (0, import_react5.useRef)(null);
-  return (0, import_react5.useEffect)(() => {
+function TrackRoute() {
+  let [ip, setIp] = (0, import_react4.useState)(), formRef = (0, import_react4.useRef)(null);
+  return (0, import_react4.useEffect)(() => {
     fetch("https://api.ipify.org?format=json").then((res) => res.json()).then((res) => {
       setIp(res.ip);
     });
-  }, []), (0, import_react5.useEffect)(() => {
+  }, []), (0, import_react4.useEffect)(() => {
     var _a;
     ip && ((_a = formRef.current) == null || _a.submit());
-  }, [ip]), /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(import_jsx_runtime4.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(import_core2.Loader, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(import_react4.Form, { ref: formRef, method: "post", hidden: !0, children: [
+  }, [ip]), /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_jsx_dev_runtime3.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_core.Loader, {}, void 0, !1, {
+      fileName: "app/routes/$trackId.tsx",
+      lineNumber: 66,
+      columnNumber: 13
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Form, { ref: formRef, method: "post", hidden: !0, children: [
       "ip: ",
       ip,
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("input", { name: "ip", defaultValue: ip })
-    ] })
-  ] });
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("input", { name: "ip", defaultValue: ip }, void 0, !1, {
+        fileName: "app/routes/$trackId.tsx",
+        lineNumber: 69,
+        columnNumber: 17
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/$trackId.tsx",
+      lineNumber: 67,
+      columnNumber: 13
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/$trackId.tsx",
+    lineNumber: 65,
+    columnNumber: 9
+  }, this);
 }
 
 // app/routes/index.tsx
@@ -253,8 +272,8 @@ __export(routes_exports, {
   action: () => action2,
   default: () => Index
 });
-var import_core3 = require("@mantine/core"), import_node4 = require("@remix-run/node"), import_react6 = require("@remix-run/react");
-var import_jsx_runtime5 = require("react/jsx-runtime"), randomstring = require("randomstring"), random = randomstring.generate({
+var import_core2 = require("@mantine/core"), import_node3 = require("@remix-run/node"), import_react5 = require("@remix-run/react");
+var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime"), randomstring = require("randomstring"), random = randomstring.generate({
   length: 12,
   charset: "abcdefghijklmnopqrstuvwxyz1234567890"
 }), action2 = async ({ request }) => {
@@ -264,12 +283,12 @@ var import_jsx_runtime5 = require("react/jsx-runtime"), randomstring = require("
   let fields = { redirectUrl, trackId: random }, track = await db.track.create({
     data: fields
   });
-  return console.log("*******" + redirectUrl + "*******"), (0, import_node4.redirect)(`/tracks/${track.trackId}`);
+  return console.log("*******" + redirectUrl + "*******"), console.log(track.trackId), (0, import_node3.redirect)(`/tracks/${track.trackId}`);
 };
 function Index() {
-  return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(import_core3.Container, { children: /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(import_react6.Form, { method: "post", style: { display: "flex", alignItems: "flex-end" }, children: [
-    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
-      import_core3.TextInput,
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_core2.Container, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react5.Form, { method: "post", style: { display: "flex", alignItems: "flex-end" }, children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(
+      import_core2.TextInput,
       {
         size: "xl",
         placeholder: "https://google.com",
@@ -278,17 +297,37 @@ function Index() {
         name: "redirectUrl",
         style: { flex: 1 },
         type: "url"
-      }
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/routes/index.tsx",
+        lineNumber: 37,
+        columnNumber: 7
+      },
+      this
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(import_core3.Button, { ml: "md", size: "xl", type: "submit", children: "Create tracker" })
-  ] }) });
+    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_core2.Button, { ml: "md", size: "xl", type: "submit", children: "Create tracker" }, void 0, !1, {
+      fileName: "app/routes/index.tsx",
+      lineNumber: 48,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/index.tsx",
+    lineNumber: 36,
+    columnNumber: 5
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/index.tsx",
+    lineNumber: 35,
+    columnNumber: 3
+  }, this);
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "dfd20e79", entry: { module: "/build/entry.client-2FENJJKO.js", imports: ["/build/_shared/chunk-Z6ABINEY.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-RXHQ6VS2.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$trackId": { id: "routes/$trackId", parentId: "root", path: ":trackId", index: void 0, caseSensitive: void 0, module: "/build/routes/$trackId-ZPZLL5ID.js", imports: ["/build/_shared/chunk-4XELYLCC.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-MMEHN62Y.js", imports: ["/build/_shared/chunk-4XELYLCC.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/tracks/$trackId": { id: "routes/tracks/$trackId", parentId: "root", path: "tracks/:trackId", index: void 0, caseSensitive: void 0, module: "/build/routes/tracks/$trackId-RXEXVDRV.js", imports: ["/build/_shared/chunk-4XELYLCC.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-DFD20E79.js" };
+var assets_manifest_default = { version: "6f35751e", entry: { module: "/build/entry.client-Q47HWJPO.js", imports: ["/build/_shared/chunk-EHDMPI5L.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-RJ2SI3D3.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$trackId": { id: "routes/$trackId", parentId: "root", path: ":trackId", index: void 0, caseSensitive: void 0, module: "/build/routes/$trackId-XNAYRHUQ.js", imports: ["/build/_shared/chunk-MX6EQOEZ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: "index", index: void 0, caseSensitive: void 0, module: "/build/routes/index-I2ZYXYQ6.js", imports: ["/build/_shared/chunk-MX6EQOEZ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-6F35751E.js" };
 
 // server-entry-module:@remix-run/dev/server-build
-var assetsBuildDirectory = "public\\build", future = { unstable_cssModules: !1, unstable_cssSideEffectImports: !1, unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, unstable_vanillaExtract: !1, v2_errorBoundary: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
+var assetsBuildDirectory = "public/build", future = { unstable_cssModules: !1, unstable_cssSideEffectImports: !1, unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, unstable_vanillaExtract: !1, v2_errorBoundary: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
   root: {
     id: "root",
     parentId: void 0,
@@ -297,27 +336,19 @@ var assetsBuildDirectory = "public\\build", future = { unstable_cssModules: !1, 
     caseSensitive: void 0,
     module: root_exports
   },
-  "routes/tracks/$trackId": {
-    id: "routes/tracks/$trackId",
-    parentId: "root",
-    path: "tracks/:trackId",
-    index: void 0,
-    caseSensitive: void 0,
-    module: trackId_exports
-  },
   "routes/$trackId": {
     id: "routes/$trackId",
     parentId: "root",
     path: ":trackId",
     index: void 0,
     caseSensitive: void 0,
-    module: trackId_exports2
+    module: trackId_exports
   },
   "routes/index": {
     id: "routes/index",
     parentId: "root",
-    path: void 0,
-    index: !0,
+    path: "index",
+    index: void 0,
     caseSensitive: void 0,
     module: routes_exports
   }
@@ -331,3 +362,4 @@ var assetsBuildDirectory = "public\\build", future = { unstable_cssModules: !1, 
   publicPath,
   routes
 });
+//# sourceMappingURL=index.js.map
